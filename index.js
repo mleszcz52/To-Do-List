@@ -55,3 +55,8 @@ mylist[i].addEventListener("click", function (ev) {
 }, false);
 
 document.getElementById('addBtn').addEventListener('click', add);
+document.addEventListener('keypress', function (key) {
+  if (key.key === 'Enter') {
+    add();
+}
+});
